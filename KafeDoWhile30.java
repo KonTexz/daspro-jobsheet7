@@ -1,10 +1,10 @@
 import java.util.Scanner;
 
 public class KafeDoWhile30 {
+    public static void main(String[] args) {
     Scanner sc = new Scanner(System.in);
-    int teh, kopi, roti;
+    int totalHarga, teh, kopi, roti, hargaKopi = 12000, hargaTeh = 7000, hargaRoti = 20000;
     String namaPelanggan;
-    int hargaKopi = 12000, hargaTeh = 7000, hargaRoti = 20000;
 
     do {
         System.out.print("Masukkan nama pelanggan: (Ketik 'batal' untuk keluar) ");
@@ -23,7 +23,8 @@ public class KafeDoWhile30 {
             System.out.println("Total yang harus dibayar: Rp" + totalHarga);
             sc.nextLine();
     } while (true);
-    
+
     System.out.println("Semua transaksi selesai.");
-    
+
+    }
 }
