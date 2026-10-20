@@ -14,8 +14,15 @@ public class SiakadFor30 {
             if (nilai < terendah) {
                 terendah = nilai;
             }
+            if (nilai >= 60) {
+                int lulus++;
+            } else {
+                int tidakLulus++;
+            }
         }
         System.out.println("Nilai tertinggi: " + tertinggi);
         System.out.println("Nilai terendah: " + terendah);
+        System.out.println("Jumlah mahasiswa yang lulus: " + lulus);
+        System.out.println("Jumlah mahasiswa yang tidak lulus: " + tidakLulus);
     }
 }
